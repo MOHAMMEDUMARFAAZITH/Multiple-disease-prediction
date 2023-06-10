@@ -1,7 +1,7 @@
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
-diabetes_model = pickle.load(open("model/Diabetes_model.sav","rb"))
+diabetes_model = pickle.load(open("model/diabetes_model.sav","rb"))
 heart_diseas_model = pickle.load(open("model/heart_disease_model.sav","rb"))
 parkinsons_model = pickle.load(open("model/parkinsons_model.sav","rb"))
 with st.sidebar:
