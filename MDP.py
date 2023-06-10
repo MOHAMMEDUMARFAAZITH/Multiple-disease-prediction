@@ -1,7 +1,7 @@
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
-diabetes_model = pickle.load(open("E:/GUVI/ML_project/ML Multiple disease prediction/diabetes_model.sav","rb"))
+diabetes_model = pickle.load(open("https://github.com/MOHAMMEDUMARFAAZITH/Multiple-disease-prediction/blob/main/Diabetes_model.ipynb","rb"))
 heart_diseas_model = pickle.load(open("E:/GUVI/ML_project/ML Multiple disease prediction/heart_disease_model.sav","rb"))
 parkinsons_model = pickle.load(open("E:/GUVI/ML_project/ML Multiple disease prediction/parkinsons_model.sav","rb"))
 with st.sidebar:
