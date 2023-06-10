@@ -6,7 +6,7 @@ heart_diseas_model = pickle.load(open("E:/GUVI/ML_project/ML Multiple disease pr
 parkinsons_model = pickle.load(open("E:/GUVI/ML_project/ML Multiple disease prediction/parkinsons_model.sav","rb"))
 with st.sidebar:
 	
-	selected = option_menu("Multiple Diseas Prediction System",["Diabetes Prediction","Heart Diseas Prediction","Parkinsons Prediction"],
+	selected = option_menu("Multiple Diseas Prediction System",["Diabetes Prediction","Heart Disease Prediction","Parkinsons Prediction"],
 	icons = ["activity","heart","person"],default_index=0)
 
 if (selected == "Diabetes Prediction"):
@@ -38,7 +38,7 @@ if (selected == "Diabetes Prediction"):
 	st.success(diab_diagnosis)
     
 
-if (selected == 'Heart Diseas Prediction'):
+if (selected == 'Heart Disease Prediction'):
 	st.title('Heart Diseas Prediction using ML')
 	col1, col2, col3 = st.columns(3)
 	with col1:
