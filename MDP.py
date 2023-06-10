@@ -11,18 +11,18 @@ with st.sidebar:
 
 if (selected == "Diabetes Prediction"):
 	st.title("Diabetes Prediction using ML")
-	col1, col2, col3 = st.columns(3)
+	col1, col2 = st.columns(2)
 	with col1:
 		Pregnancies = st.text_input('Number of Pregnancies')
 	with col2:
 		Glucose = st.text_input('Glucose Level')
-	with col3:
-		BloodPressure = st.text_input('Blood Pressure value')
 	with col1:
-		SkinThickness = st.text_input('Skin Thickness value')
+		BloodPressure = st.text_input('Blood Pressure value')
 	with col2:
+		SkinThickness = st.text_input('Skin Thickness value')
+	with col1:
 		Insulin = st.text_input('Insulin Level')
-	with col3:
+	with col2:
 		BMI = st.text_input('BMI value')
 	with col1:
 		DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
@@ -79,36 +79,36 @@ if (selected == 'Heart Disease Prediction'):
     
 if (selected == "Parkinsons Prediction"):
 	st.title("Parkinson's Disease Prediction using ML")
-	col1, col2, col3, col4, col5 = st.columns(5)
+	col1, col2, col3 = st.columns(3)
 	with col1:
 		fo = st.text_input('MDVP:Fo(Hz)')
 	with col2:
 		fhi = st.text_input('MDVP:Fhi(Hz)')
 	with col3:
 		flo = st.text_input('MDVP:Flo(Hz)')
-	with col4:
+	with col1:
 		Jitter_percent = st.text_input('MDVP:Jitter(%)')
-	with col5:
+	with col2:
 		Jitter_Abs = st.text_input('MDVP:Jitter(Abs)')
-	with col1:
+	with col3:
 		RAP = st.text_input('MDVP:RAP')
-	with col2:
-		PPQ = st.text_input('MDVP:PPQ')
-	with col3:
-		DDP = st.text_input('Jitter:DDP')
-	with col4:
-		Shimmer = st.text_input('MDVP:Shimmer')
-	with col5:
-		Shimmer_dB = st.text_input('MDVP:Shimmer(dB)')
 	with col1:
-		APQ3 = st.text_input('Shimmer:APQ3')
+		PPQ = st.text_input('MDVP:PPQ')
 	with col2:
-		APQ5 = st.text_input('Shimmer:APQ5')
+		DDP = st.text_input('Jitter:DDP')
 	with col3:
+		Shimmer = st.text_input('MDVP:Shimmer')
+	with col1:
+		Shimmer_dB = st.text_input('MDVP:Shimmer(dB)')
+	with col2:
+		APQ3 = st.text_input('Shimmer:APQ3')
+	with col3:
+		APQ5 = st.text_input('Shimmer:APQ5')
+	with col1:
 		APQ = st.text_input('MDVP:APQ')
-	with col4:
+	with col2:
 		DDA = st.text_input('Shimmer:DDA')
-	with col5:
+	with col3:
 		NHR = st.text_input('NHR')
 	with col1:
 		HNR = st.text_input('HNR')
@@ -116,13 +116,13 @@ if (selected == "Parkinsons Prediction"):
 		RPDE = st.text_input('RPDE')
 	with col3:
 		DFA = st.text_input('DFA')
-	with col4:
-		spread1 = st.text_input('spread1')
-	with col5:
-		spread2 = st.text_input('spread2')
 	with col1:
-		D2 = st.text_input('D2')
+		spread1 = st.text_input('spread1')
 	with col2:
+		spread2 = st.text_input('spread2')
+	with col3:
+		D2 = st.text_input('D2')
+	with col1:
 		PPE = st.text_input('PPE')
 	parkinsons_diagnosis = ''
 	if st.button("Parkinson's Test Result"):
